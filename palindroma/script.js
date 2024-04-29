@@ -6,13 +6,14 @@
 // Chiedo all’utente di inserire una parola.
 let parola = prompt(`Inserisci una parola`)
 console.log(parola)
+let nuovaParola
 // creo variabile parola invertita
 let reversed = parola.split('').reverse().join('');
 console.log(reversed);
 
 // Creare una funzione per capire se la parola inserita è palindroma.
 if(parola == reversed){
-    console.log(`hai inserito un palindomo`)
+    alert(`Bravo, hai inserito un palindomo`)
 } else{
-    console.log(`non hai inserito un palindomo`)
+   nuovaParola = alert(`non hai inserito un palindomo, ricarica la pagina e inserisci una nuova parola`)
 }
